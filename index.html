@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Proyecto IoT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles2.scss" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+<body>
+
+<link href="css/dasdezine.css" rel="stylesheet">
+
+</head>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Portfolio</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+          <a href="#"><img class="icono" src="iot.jpg" alt="iot"></a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="https://github.com/RepoGabiRomero/Proyecto-IoT" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/RepoGabiRomero/Proyecto-IoT/tree/master/CODIGOS/CODIGO%20DE%20CONTROL%20DE%20UN%20SEMAFORO">Semaforo Iot</a></li>
+                <li><a href="https://github.com/RepoGabiRomero/Proyecto-IoT/tree/master/CODIGOS/CODIGO%20DE%20DOMOTICA">Domotica</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<img class="home" src="Vector_2646.jpg">
+</img>
+<div style="height: 1000px">
+  <br>
+  <br>
+  <section>
+    <h2 class="myH2">De qué se trata?</h2>
+    <br>
+      <p class="myP">
+        Este proyecto consiste en el control inteligente vía internet, tambien conocido como IoT (Internet of things). Un sistema de internet de las cosas 
+        incluye diversos elementos, comenzando con los dispositivos físicos que interactúan con el mundo real. Estos dispositivos incluyen sensores 
+        (que recolectan datos como temperatura, humedad, medidas eléctricas, videos, etc.) y actuadores (que permiten tomar acciones como abrir válvulas o 
+        encender motores, entre otros). Además de esto cuenta con un sotware para poder controlar las cosas que se le conecten a distancia.
+      </p>
+    <br>
+  </section>
+  <section>
+    <h2 class="myH2">Placa principal</h2>
+    <br>
+    <img src="WhatsApp Image 2022-11-24 at 14.13.13.jpeg" class="foto" alt="">
+    <img src="WhatsApp Image 2022-11-24 at 14.13.14.jpeg" class="foto" alt="">
+    <br>
+    <p class="myP">
+      Esta placa consiste en una serie de cuatro relays, controlados por la placa de desarrollo 
+      <a href="https://www.amazon.com/-/es/DIYmall-ESP32-WROOM-32-desarrollo-ESP-32S-Arduino/dp/B084KWNMM4">ESP32</a>. Estos relays son los actuadores, a los cuales se conectan
+      el o los dispositivos que se desea controlar a través de WIFI. Para esto, el microcontrolador se conecta a una base de datos para poder obtener la informacion
+      de la nube que se necesita, en este caso se utilizó <a href="https://firebase.google.com/">Firebase</a> para hacerlo. Ademas de esto la placa cuenta con
+      dos borneras para poder incorporar un sensor de iluminación y otro de temperatura.
+    </p>  
+    <h1 class="subTitulo">Esquematico de la placa principal:</h1>
+    <img src="Captura de pantalla 2022-11-24 152336.png" alt="" >
+    <h1 class="subTitulo">Esquematico del modulo de temperatura:</h1>
+    <img src="LM35.png" alt="" >
+    <h1 class="subTitulo">Esquematico del modulo de iluminación:</h1>
+    <img src="LDR.png" alt="">
+  </section>
+  <section>
+    <h2 class="myH2">Aplicaciones</h2>
+    <h1 class="subTitulo">Domótica</h1>
+    <p class="myP">
+      La domótica refiere a las tecnologías que se orientan al control y la automatización inteligente de la vivienda. La app que se hizo fue pensada 
+      para poder controlar los dispositivos conectados activandolos o desactivandolos de forma manual o automaticamente, controlados, en este caso, mediante los
+      sensores de temperatura e iluminación conectados.
+    </p>
+    <a href="https://drive.google.com/drive/search?q=IoT.apk" class="descarga">DESCARGAR APP</a>
+    <h1 class="subTitulo">Semaforo IoT</h1>
+    <p class="myP">
+      En este caso se aplico el proyecto a un semaforo, el cual se controla por una opcion que prende y apaga las luces de forma manual o de forma autamatica 
+      indicandole el tiempo que se necesita que cada luz este prendida.
+    </p>
+    <a href="https://drive.google.com/drive/search?q=Semaforo.apk" class="descarga">DESCARGAR APP</a>
+  </section>
+  <footer>a</footer>
+
+</div>
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+</body>
+
+</html>
+</body>
+
+</html>
